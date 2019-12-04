@@ -1,5 +1,6 @@
 import {AfterViewInit, Component, OnInit} from '@angular/core';
 import {PreloaderService} from "./core/services/preloader.service";
+import {Router} from "@angular/router";
 
 @Component({
   selector: 'app-root',
@@ -8,11 +9,14 @@ import {PreloaderService} from "./core/services/preloader.service";
 })
 export class AppComponent implements OnInit, AfterViewInit {
   title = 'JeungNyeongJae';
-  constructor(private preloader: PreloaderService) {}
+  constructor(private preloader: PreloaderService, private router: Router) {}
 
   ngOnInit() {}
 
   ngAfterViewInit() {
     this.preloader.hide();
+  }
+
+  login() {
   }
 }

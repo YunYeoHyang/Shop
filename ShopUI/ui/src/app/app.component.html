@@ -1,16 +1,44 @@
-<app-navigation></app-navigation>
-<!--<div>-->
-<!--  <mat-slider min="1" max="100" step="1" value="50"></mat-slider>-->
-<!--</div>-->
-<!--<!doctype html>-->
-<!--<html lang="en">-->
+<!doctype html>
+<html lang="zh-CN">
 
-<!--<head>-->
-<!--<link href="node_modules/@angular/material/prebuilt-themes/indigo-pink.css" rel="stylesheet">-->
-<!--</head>-->
+  <head>
+  </head>
 
-<!--<body>-->
-<!--<h1>sss</h1>-->
-<!--</body>-->
+  <body class="back-style">
 
-<!--</html>-->
+    <div class="login-div">
+
+      <!--  User Start    -->
+      <div class="user-style">
+        <img class="image-style" src="https://material.angular.io/assets/img/examples/shiba2.jpg">
+        <h1 style="vertical-align: inherit">JeungNyeongJae</h1>
+      </div>
+      <!--  User End    -->
+
+      <!--  Password Start    -->
+      <div class="password">
+        <i class="lock-style"><mat-icon style="vertical-align: inherit; width: 30px; height: 30px">lock</mat-icon></i>
+        <mat-form-field class="password-width">
+          <input matInput placeholder="密码" type="password">
+        </mat-form-field>
+      </div>
+      <!--  Password End    -->
+
+      <!--  Login Button Start    -->
+      <div class="login-button">
+        <button mat-button class="button-style" (click)="login()">登录</button>
+      </div>
+      <!--  Login Button End    -->
+
+      <!--  Forget & Sign in Start    -->
+      <div class="foot-style">
+        <span class="space1"><button mat-button class="font-color">现在注册！</button></span>
+<!--        <span class="space"></span>-->
+        <span class="space2"><button mat-button class="font-color">忘记密码？</button></span>
+      </div>
+      <!--  Forget & Sign in End    -->
+    </div>
+
+  </body>
+
+</html>

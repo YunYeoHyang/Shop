@@ -24,9 +24,10 @@ import { AddressComponent } from './pages/address/address.component';
 import { MatInputModule } from '@angular/material/input';
 import { MatSelectModule } from '@angular/material/select';
 import { MatRadioModule } from '@angular/material/radio';
-import { ReactiveFormsModule } from '@angular/forms';
+import {FormsModule, ReactiveFormsModule} from '@angular/forms';
 import { DragComponent } from './pages/drag/drag.component';
 import { DragDropModule } from '@angular/cdk/drag-drop';
+import {MatTabsModule} from "@angular/material/tabs";
 
 @NgModule({
   declarations: [
@@ -59,7 +60,9 @@ import { DragDropModule } from '@angular/cdk/drag-drop';
     MatSelectModule,
     MatRadioModule,
     ReactiveFormsModule,
-    DragDropModule
+    DragDropModule,
+    MatTabsModule,
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
